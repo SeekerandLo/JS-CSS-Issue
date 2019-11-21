@@ -4,7 +4,6 @@
 
 ***
 
-<html>
 <div class="index">
 
 </div>
@@ -15,4 +14,3 @@
     background: black
 }
 </style>
-</html>
