@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-main-content {
+            background: #fff;
+            margin-bottom: 20px;
+        }
+
+        .flex-main-content-header {
+            background: yellow;
+        }
+
+        .flex-main-content-footer {
+            background: yellow;
+        }
+
+        .flex-main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .flex-main-content-parent{
+            width: 50%;
+        }
+
+        .flex-main-left{
+            width: 25%;
+        }
+
+        .flex-main-right{
+            width: 25%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .flex-main-right {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .flex-main {
+                flex-direction: column;
+            }
+
+            .content2 {
+                display: none;
+            }
+
+            .footer{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        
+        @media screen  and (min-width: 400px){
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background: yellow;">
+        HEADER
+    </header>
+    <main class="flex-main" style="background: gray;">
+        <div class="flex-main-left">
+            <h2>热门文章</h2>
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </div>
+        <div  class="flex-main-content-parent">
+            <div class="flex-main-content content1">
+                <header class="flex-main-content-header">
+                    header1
+                </header>
+                <article>
+                    内容1
+                </article>
+                <footer class="flex-main-content-footer">
+                    footer1
+                </footer>
+            </div>
+            <div class="flex-main-content content2">
+                <header class="flex-main-content-header">
+                    header2
+                </header>
+                <article>
+                    内容2
+                </article>
+                <footer class="flex-main-content-footer">
+                    footer2
+                </footer>
+            </div>
+        </div>
+        <div class="flex-main-right">
+            <h2>关于我们</h2>
+            关于我们的内容
+        </div>
+    </main>
+    <footer class="footer" style="background: yellow;">
+        FOOTER
+    </footer>
+</body>
+
+</html>
