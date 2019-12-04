@@ -1,3 +1,3 @@
-## 目录
+## CSS Issue
 
-- [display](https://github.com/SeekerandLo/CSS-Note/blob/master/display/display.md)
+### 😀[关注 issue](https://github.com/SeekerandLo/CSS-Note/issues)🙃
